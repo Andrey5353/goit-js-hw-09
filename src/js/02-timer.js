@@ -7,6 +7,7 @@ const refs = {
     selector: document.querySelector('#datetime-picker'),
     canvas: document.querySelectorAll('#stockGraph'),
     inputEl: document.querySelector('#datetime-picker'),
+    outputDateEl: document.querySelector('.timer'),
 
     audioEl: document.querySelector('.audio'),
 
@@ -18,7 +19,7 @@ const refs = {
   },
 };
 
-const widthField = 150;
+const widthField = refs.outputDateEl.firstElementChild.offsetWidth;
 const halfWidthField = Math.floor(widthField / 2);
 
 refs.canvas.forEach(canvas => {
